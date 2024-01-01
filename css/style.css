@@ -24,7 +24,7 @@
 }
 
 .mario {
-    width: 150px;
+    width: 9rem;
     position: absolute;
     bottom: 0;
 }
@@ -35,7 +35,7 @@
 
 .clouds {
     position: absolute;
-    width: 550px;
+    width: 34rem;
     animation: clouds-animation 20s infinite linear;
 }
 
@@ -82,4 +82,25 @@
         right: 100%;
     }
 
+}
+
+footer{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+footer p{
+    font-size: 20px;
+}
+
+button{
+    background: rgb(35, 160, 35);
+    color: white;
+    height: 60px;
+    width: 80px;
+    align-items: center;
+    border-radius: 10px;
 }

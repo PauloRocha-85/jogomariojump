@@ -35,4 +35,4 @@ const loop = setInterval(() => {
 
 }, 10)
 
-document.addEventListener('click' , jump);
+document.getElementById("myButton").addEventListener('click' , jump);
