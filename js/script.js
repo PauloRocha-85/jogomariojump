@@ -35,4 +35,27 @@ const loop = setInterval(() => {
 
 }, 10)
 
+// APLICAÇÃO DE BOTÃO PARA MOBILE
+
 document.getElementById("myButton").addEventListener('click' , jump);
+
+// AUTERAR VELOCIDADE DO OBSTACULO 
+
+window.addEventListener('resize', resizePipeAnimation);
+
+function resizePipeAnimation() {
+ let screenWidth = window.innerWidth;
+ let pipeAnimationDuration = 1;
+
+ if (screenWidth > 680) {
+    pipeAnimationDuration = 2;
+ }
+
+ let pipes = document.querySelectorAll('.pipe');
+
+ pipes.forEach(pipe => {
+    pipe.style.animationDuration = pipeAnimationDuration + 's';
+ });
+}
+
+resizePipeAnimation();

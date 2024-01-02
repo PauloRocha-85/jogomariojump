@@ -18,9 +18,9 @@
 .pipe {
     position: absolute;
     bottom: 0;
-    width: 80px;
-    right: -80px;
-    animation: pipe-animation 2s infinite linear;
+    width: 5rem;
+    right: -5rem;
+    animation: pipe-animation 1s infinite linear;
 }
 
 .mario {
@@ -41,7 +41,7 @@
 
 @keyframes pipe-animation {
     from{
-    right: 0;
+    right: -80px;
     }
 
     to {
